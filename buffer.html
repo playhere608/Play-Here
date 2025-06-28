@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Redirecting...</title>
-  <meta http-equiv="refresh" content="3;url=https://www.toprummy.cc?code=7K9EPYZKAHM&t=1751091212" />
+  <title>Continue to Play</title>
   <style>
     body {
       display: flex;
@@ -16,7 +15,9 @@
       color: #fff;
       font-family: Arial, sans-serif;
       text-align: center;
+      padding: 1rem;
     }
+
     .spinner {
       width: 40px;
       height: 40px;
@@ -24,20 +25,41 @@
       border-top: 5px solid #ffd700;
       border-radius: 50%;
       animation: spin 1s linear infinite;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
+
     @keyframes spin {
       to { transform: rotate(360deg); }
     }
-    h2 {
+
+    button {
+      background-color: #ffcc00;
+      color: #000;
+      border: none;
+      padding: 0.75rem 1.5rem;
       font-size: 1rem;
-      font-weight: normal;
-      opacity: 0.8;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    button:active {
+      transform: scale(0.95);
     }
   </style>
 </head>
 <body>
   <div class="spinner"></div>
-  <h2>Redirecting to your secure gaming platform…</h2>
+  <h2>You're almost there!</h2>
+  <p>Please click the button below to continue.</p>
+  <br />
+  <button onclick="window.location.href='https://www.toprummy.cc?code=7K9EPYZKAHM&t=1751091212'">
+    ▶️ Continue to Game
+  </button>
 </body>
 </html>
