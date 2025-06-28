@@ -18,6 +18,10 @@
       padding: 1rem;
     }
 
+    .spinner, .success, .cta {
+      display: none;
+    }
+
     .spinner {
       width: 40px;
       height: 40px;
@@ -32,7 +36,19 @@
       to { transform: rotate(360deg); }
     }
 
-    button {
+    .success {
+      font-size: 3rem;
+      color: #00ff88;
+      margin-bottom: 1.2rem;
+      animation: pop 0.5s ease;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .cta button {
       background-color: #ffcc00;
       color: #000;
       border: none;
@@ -44,22 +60,41 @@
       transition: transform 0.2s ease;
     }
 
-    button:hover {
+    .cta button:hover {
       transform: scale(1.05);
     }
 
-    button:active {
+    .cta button:active {
       transform: scale(0.95);
     }
   </style>
 </head>
 <body>
-  <div class="spinner"></div>
-  <h2>You're almost there!</h2>
-  <p>Please click the button below to continue.</p>
-  <br />
-  <button onclick="window.location.href='https://www.toprummy.cc?code=7K9EPYZKAHM&t=1751091212'">
-    ▶️ Continue to Game
-  </button>
+  <div class="spinner" id="spinner"></div>
+  <h2 id="message">Please wait...</h2>
+  <div class="success" id="success">✅</div>
+
+  <div class="cta" id="cta">
+    <p>You can now continue:</p>
+    <button onclick="window.location.href='https://www.toprummy.cc?code=7K9EPYZKAHM&t=1751091212'">
+      ▶️ Continue to Game
+    </button>
+  </div>
+
+  <script>
+    const spinner = document.getElementById("spinner");
+    const message = document.getElementById("message");
+    const success = document.getElementById("success");
+    const cta = document.getElementById("cta");
+
+    spinner.style.display = "block";
+
+    setTimeout(() => {
+      spinner.style.display = "none";
+      message.textContent = "Ready!";
+      success.style.display = "block";
+      cta.style.display = "block";
+    }, 3000); // now set to 3 seconds
+  </script>
 </body>
 </html>
