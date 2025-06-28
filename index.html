@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Win Rewards – Play Now</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://i.ibb.co/chdfkmcr/b1740b2c4fa76df9d9f0edaac35a7cbb.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      color: #fff;
+      text-align: center;
+    }
+
+    .landing {
+      max-width: 480px;
+      width: 100%;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 7vw, 2.6rem);
+      background: linear-gradient(90deg, #ffd700, #ffb700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+
+    .timer {
+      color: #ff6b6b;
+      font-weight: bold;
+      margin: 0.5rem 0 1.5rem;
+      font-size: 1rem;
+    }
+
+    .download-img {
+      display: inline-block;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 100%;
+      margin-bottom: 0.75rem;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .download-img:hover {
+      transform: scale(1.07);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .download-img:active {
+      transform: scale(1.08);
+    }
+
+    .download-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      background-color: #ffcc00;
+      color: #000;
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+
+    .cta-button:active {
+      transform: scale(0.95);
+    }
+
+    .social-proof {
+      font-size: 0.8rem;
+      color: #ccc;
+      margin-top: 1.2rem;
+    }
+
+    .disclaimer {
+      margin-top: 1.2rem;
+      font-size: clamp(0.6rem, 2.5vw, 0.7rem);
+      color: #cbd5e0;
+      text-align: left;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 400px) {
+      h1 { font-size: 1.6rem; }
+      .cta-button {
+        width: 100%;
+        padding: 0.9rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="landing">
+    <h1>🎮 India’s Trending Skill Game – Earn While You Play!</h1>
+    <div class="timer">⚠️ Limited Offer Ends in: <span id="timer">01:00</span></div>
+
+    <a href="buffer.html" target="_blank" rel="noopener" class="download-img">
+      <img src="https://i.ibb.co/TxQ8nwNM/Whats-App-Image-2025-06-22-at-01-05-24-323a6727-copy.jpg" alt="Download Banner" />
+    </a>
+
+    <a href="buffer.html" target="_blank" rel="noopener" class="cta-button">
+      🎯 Start Playing – Claim ₹100 Bonus
+    </a>
+
+    <div class="social-proof">
+      ✔️ 10 Lakh+ users &nbsp;|&nbsp; ⭐ Rated 4.7 &nbsp;|&nbsp; 🔒 100% Safe & Legal
+    </div>
+
+    <div class="disclaimer">
+      <strong>Disclaimer:</strong><br />
+      This platform promotes skill-based mobile games intended for entertainment. 
+      No gambling is involved. Users must be 18 years or older. By clicking 
+      the image or button, you may be redirected to our verified partner’s gaming 
+      platform. Please play responsibly.
+    </div>
+  </div>
+
+  <script>
+    let time = 60;
+    const el = document.getElementById("timer");
+    const countdown = setInterval(() => {
+      let minutes = Math.floor(time / 60);
+      let seconds = time % 60;
+      el.innerText = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      time = Math.max(0, time - 1);
+      if (time <= 0) clearInterval(countdown);
+    }, 1000);
+  </script>
+</body>
+</html>
