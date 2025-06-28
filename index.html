@@ -55,19 +55,13 @@
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
     }
 
-    .download-img:active {
-      transform: scale(1.08);
-    }
-
     .download-img img {
       width: 100%;
-      height: auto;
       display: block;
       border-radius: 8px;
     }
 
     .cta-button {
-      display: inline-block;
       background-color: #ffcc00;
       color: #000;
       font-size: 1.1rem;
@@ -76,14 +70,12 @@
       border-radius: 10px;
       text-decoration: none;
       transition: transform 0.2s ease;
+      display: inline-block;
+      margin-top: 0.5rem;
     }
 
     .cta-button:hover {
       transform: scale(1.05);
-    }
-
-    .cta-button:active {
-      transform: scale(0.95);
     }
 
     .social-proof {
@@ -111,31 +103,30 @@
       text-decoration: none;
     }
 
-    footer a:hover {
-      text-decoration: underline;
-    }
-
     @media (max-width: 400px) {
-      h1 { font-size: 1.6rem; }
-      .cta-button {
-        width: 100%;
-        padding: 0.9rem 1rem;
-      }
+      .cta-button { width: 100%; }
     }
   </style>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRS90EFJS2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FRS90EFJS2');
+  </script>
 </head>
 <body>
   <div class="landing">
     <h1>🎮 India’s Trending Skill Game – Earn While You Play!</h1>
     <div class="timer">⚠️ Limited Offer Ends in: <span id="timer">01:00</span></div>
 
-    <a href="buffer.html" target="_blank" rel="noopener" class="download-img">
+    <a href="buffer.html" target="_blank" class="download-img">
       <img src="https://i.ibb.co/TxQ8nwNM/Whats-App-Image-2025-06-22-at-01-05-24-323a6727-copy.jpg" alt="Download Banner" />
     </a>
 
-    <a href="buffer.html" target="_blank" rel="noopener" class="cta-button">
-      🎯 Start Playing – Claim ₹100 Bonus
-    </a>
+    <a href="buffer.html" class="cta-button">🎯 Start Playing – Claim ₹100 Bonus</a>
 
     <div class="social-proof">
       ✔️ 10 Lakh+ users &nbsp;|&nbsp; ⭐ Rated 4.7 &nbsp;|&nbsp; 🔒 100% Safe & Legal
