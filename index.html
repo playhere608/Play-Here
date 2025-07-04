@@ -19,13 +19,11 @@
       color: #fff;
       text-align: center;
     }
-
     .landing {
       max-width: 480px;
       width: 100%;
       padding: 2rem 1rem;
     }
-
     h1 {
       font-size: clamp(1.9rem, 7vw, 2.6rem);
       background: linear-gradient(90deg, #ffd700, #ffb700);
@@ -33,14 +31,12 @@
       -webkit-text-fill-color: transparent;
       margin-bottom: 1rem;
     }
-
     .timer {
       color: #ff6b6b;
       font-weight: bold;
       margin: 0.5rem 0 1.5rem;
       font-size: 1rem;
     }
-
     .download-img {
       display: inline-block;
       border-radius: 8px;
@@ -49,21 +45,16 @@
       margin-bottom: 0.75rem;
       transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
-
     .download-img:hover {
       transform: scale(1.07);
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
     }
-
     .download-img img {
       width: 100%;
       display: block;
       border-radius: 8px;
     }
-
     .cta-button {
-      background-color: #ffcc00;
-      color: #000;
       font-size: 1.1rem;
       font-weight: 600;
       padding: 0.75rem 1.5rem;
@@ -73,22 +64,22 @@
       display: inline-block;
       margin-top: 0.5rem;
     }
-
     .cta-button:hover {
       transform: scale(1.05);
     }
-
-    .telegram-button {
+    .download-button {
+      background-color: #ff3333;
+      color: #fff;
+    }
+    .telegram-button-blue {
       background-color: #0088cc;
       color: #fff;
     }
-
     .social-proof {
       font-size: 0.8rem;
       color: #ccc;
       margin-top: 1.2rem;
     }
-
     .disclaimer {
       margin-top: 1.2rem;
       font-size: clamp(0.6rem, 2.5vw, 0.7rem);
@@ -96,18 +87,15 @@
       text-align: left;
       line-height: 1.4;
     }
-
     footer {
       margin-top: 2rem;
       font-size: 0.8rem;
       color: #aaa;
     }
-
     footer a {
       color: #ffd700;
       text-decoration: none;
     }
-
     @media (max-width: 400px) {
       .cta-button { width: 100%; }
     }
@@ -131,11 +119,16 @@
       <img src="https://i.ibb.co/TxQ8nwNM/Whats-App-Image-2025-06-22-at-01-05-24-323a6727-copy.jpg" alt="Download Banner" />
     </a>
 
-    <a href="https://d1qqphfd8m4kq0.cloudfront.net/27/4277419/indclub_34UP3PGB5XT.apk" class="cta-button" download>
-      ⬇️ Download Now – Get ₹100 Bonus
+    <a href="https://d1qqphfd8m4kq0.cloudfront.net/27/4277419/indclub_34UP3PGB5XT.apk"
+       class="cta-button download-button"
+       download
+       target="_blank">
+      Download Now
     </a>
 
-    <a href="https://t.me/clickandplay12" target="_blank" class="cta-button telegram-button">
+    <a href="https://t.me/clickandplay12"
+       target="_blank"
+       class="cta-button telegram-button-blue">
       📲 Join Our Telegram Channel
     </a>
 
@@ -152,7 +145,10 @@
     </div>
 
     <footer>
-      © 2025 PlayHere | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy Policy</a>
+      © 2025 PlayHere |
+      <a href="terms.html">Terms</a> |
+      <a href="privacy.html" target="_blank">Privacy Policy</a> |
+      <a href="about-app.html">About This App</a>
     </footer>
   </div>
 
