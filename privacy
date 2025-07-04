@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+        url('https://i.ibb.co/spJ35y4J/b1740b2c4fa76df9d9f0edaac35a7cbb.jpg') center/cover no-repeat;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      text-align: left;
+    }
+    .content {
+      background-color: rgba(0, 0, 0, 0.6);
+      max-width: 720px;
+      width: 100%;
+      padding: 2rem;
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
+    }
+    h1 {
+      font-size: clamp(2rem, 6vw, 2.8rem);
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #ffd700, #ffb700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 1.8rem;
+      color: #ffcc00;
+    }
+    p {
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+      line-height: 1.6;
+      color: #ddd;
+    }
+    a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Privacy Policy</h1>
+    <p><strong>Last Updated:</strong> July 2025</p>
+
+    <p>This Privacy Policy explains how we handle information when you visit our site <strong>gameworld.blog</strong> or <strong>playhere608.github.io</strong>, or download our Android app.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We do not collect personal data directly through this website. If you reach out via Telegram or WhatsApp, your name or number may be shared with us and is only used to respond to your query.</p>
+
+    <h2>2. App Download & Permissions</h2>
+    <p>Our APK may request permissions such as storage or network access, depending on its functions. We do not gather sensitive data without consent.</p>
+
+    <h2>3. Third-Party Services</h2>
+    <p>We link to external platforms like CloudFront and Telegram. We are not responsible for how those services handle your data.</p>
+
+    <h2>4. Cookies</h2>
+    <p>We do not use cookies for personal data. Hosting or analytics providers may use basic tracking tools.</p>
+
+    <h2>5. Security</h2>
+    <p>We use reasonable safeguards but remind users that no online transmission is completely secure.</p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>No data is knowingly collected from users under 13. If you’re a parent or guardian, please contact us with concerns.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>Questions? Reach us via Telegram:</p>
+    <p>📨 <a href="https://t.me/clickandplay12" target="_blank">https://t.me/clickandplay12</a></p>
+
+    <p>By using our site or app, you agree to this Privacy Policy.</p>
+
+    <footer>
+      © 2025 PlayHere | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy Policy</a>
+    </footer>
+  </div>
+</body>
+</html>
